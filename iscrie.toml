@@ -1,0 +1,23 @@
+[general]
+root_path = "./test/testdata"
+log_path = "./logs"
+log_level = "info"
+batch_size = 4
+
+[nexus]
+url = "http://localhost:8081"
+repository = "test"
+repository_type = "maven2"
+force_replace = true
+
+[retry]
+retry_attempts = 3
+timeout = 10
+
+[proxy]
+enabled = false
+
+[auth]
+type = "basic"
+user_token = "admin"
+pass_token = "admin"
